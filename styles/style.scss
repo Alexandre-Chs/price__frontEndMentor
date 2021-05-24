@@ -19,7 +19,7 @@ body {
 .wrapper__card {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
-    max-width: 40%;
+    max-width: 42%;
     background-color: white; 
 }
 
@@ -71,7 +71,7 @@ body {
 
         button {
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-            margin: 2rem 0 2rem 0;
+            margin: 1.5rem 0 2rem 0;
             width: 90%;
             height: 45px;
             border: none; 
@@ -106,19 +106,26 @@ body {
             line-height: 28px;
             padding-bottom: 2rem; 
         }  
+
+        ul {
+            list-style: none;
+            line-height: 20px;
+        }
     }
 }
 
 @media (max-width: 1000px){
     body {
-        height: 100vh;
+        height: 100%;
         margin: 1rem;    
     }
 
     .wrapper__card {
         max-width: 90%;
+        height: 100%;
     }
     .second__block {
+        height: 100%;
         display: flex; 
         flex-direction: column;
 
@@ -130,7 +137,12 @@ body {
         .description__content {
             width: 100%;
             border-bottom-left-radius: 5px;
+
+            ul {
+                padding-bottom: 1rem; 
+            }
         }
+
     }
 
 
